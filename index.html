@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Document metadata -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The US Postal Service</title>
+
+  <!-- External CSS styles -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Diplomata+SC&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather&display=swap">
+
+
+  <!-- Internal CSS styles -->
+  <style>
+    /* General styles for the entire page */
+    body {
+        background-color: tan;
+      font-family: sans-serif; /* Fallback font for the body */
+    }
+
+    /* Styles for the header section */
+    header {
+      text-align: center;
+    }
+
+    h1, .subheading {
+      font-family: 'Diplomata SC', sans-serif; /* Apply a specific font to h1 and .subheading */
+    }
+
+    h1 {
+      font-size: 65px;
+    }
+
+    .subheading {
+      font-size: 18px;
+    }
+
+    /* Styles for the main content container */
+    .container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    /* Styles for the video container */
+    .video-container {
+    margin-top:10px;
+      width: 50%; /* Make the video container half the width of the container */
+    }
+
+    .video {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    /* Styles for the images container */
+    .images-container {
+      width: 20%; /* Make the images container half the width of the container */
+      display: flex;
+      flex-direction: row; /* Place captions underneath */
+      justify-content: space-around;
+      align-items: center;
+      margin-top:-300px;
+      margin-left: 280px;
+    }
+
+    /* Make the images turn slightly grey on hover */
+    .image {
+      max-width: 45%;
+      height: auto;
+      transition: transform 0.3s, filter 0.3s; /* Add smooth transition for transform and filter */
+        margin-right: 60px; /* Add margin between images */
+    }
+
+    .image:hover {
+      transform: scale(1.1); /* Zoom in a bit on hover */
+      filter: grayscale(30%); /* Apply grayscale effect on hover (adjust the percentage as needed) */
+    }
+
+    /* Styles for the image captions */
+    .image-caption {
+      text-align: center;
+      font-size: 14px;
+      opacity: 0; /* Initially, captions are hidden */
+      transition: opacity 0.3s; /* Add transition for opacity */
+      position: absolute;
+      top: 20%;
+      left: 68%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      white-space: nowrap;
+    }
+
+    /* Show caption on image hover */
+    .image:hover + .image-caption {
+      opacity: 1;
+    }
+
+    /* Styles for the essay section */
+    .essay {
+      flex: 1; /* Make the essay element take up all the remaining space in the .container element */
+      width: 60%; /* Make the essay wider */
+      padding: 135px;
+    margin-top:90px;
+    line-height: 38px;
+      font-size: 21px;
+      font-family: 'Merriweather'; /* Use the Merriweather font */
+      padding: 30px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header section -->
+  <header>
+    <h1>The US Postal Service</h1>
+    <p class="subheading">A service innovation that changed the world</p>
+  </header>
+
+  <!-- Main content container -->
+  <div class="container">
+    <!-- Video container -->
+    <div class="video-container">
+      <iframe class="video" width="100%" height="450" src="https://www.youtube.com/embed/F22HrqRXLq8" frameborder="0" allowfullscreen></iframe>
+      
+    </div>
+
+    <!-- Essay section -->
+    <div class="essay">
+      <h2>Overview</h2>
+      <p>The postal service, which originated in 11th-century China, has undergone significant evolution and holds a central place in modern society. Its global expansion, enabled by innovations like railways and airplanes, has brought about valuable services such as money orders and package delivery, greatly enhancing communication, trade, and e-commerce. Economically, it generates revenue, creates jobs, and supports government funding, fostering social and economic growth by connecting people and businesses. However, it also faces challenges, including environmental concerns related to transportation emissions, a decline in traditional mail, security and privacy issues, competition from private courier companies, infrastructure costs, accessibility disparities, and potential labor disputes. Despite these challenges, the postal service remains a crucial institution, playing an indispensable role in connecting communities, providing essential disaster relief, and demonstrating its lasting significance.</p>
+    </div>
+  </div>
+  
+  <!-- Images section -->
+  <div class="images-container">
+    <img class="image" src="https://issip.org/wp-content/uploads/2023/10/652b0176-26f0-4e34-b82e-cf018c99572e.jpeg" alt="Image 1">
+    <p class="image-caption">Generated By Deep AI <br> Prompt: US Postal Service as a historic innovation, that changed how media is consumed. <br> Date Generated: 10/03/2023 </p>
+    <img class="image" src="https://issip.org/wp-content/uploads/2023/10/652b0176-26f0-4e34-b82e-cf018c99572e.jpeg" alt="Image 2">
+    <p class="image-caption">Generated By Deep AI <br> Prompt: US Postal Service as a historic innovation, that changed how media is consumed. <br> Date Generated: 10/03/2023 </p>
+    <p class="image-caption">AI Citation</p>
+  </div>
+</body>
+</html>
