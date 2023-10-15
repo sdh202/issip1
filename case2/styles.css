@@ -2,41 +2,60 @@
 
 /* Set body background color with !important to ensure it takes precedence */
 body {
-    background-color: tan !important;
+    background-color: rgb(192, 190, 187) !important;
     font-family: 'Times New Roman', Times, serif; 
-  }
-  
-  /* Styles for the header section */
-  h1, .subheading {
+}
+
+/* Styles for the header section */
+h1, .subheading {
     font-family: 'Diplomata SC', sans-serif;
-  }
-  
-  h1 {
-    font-size: 65px;
-  }
-  
-  /* Correct the selector for .subheading */
-  .subheading {
-    font-size: 35px;
-  }
+}
 
-  .essay {
+h1 {
+    font-size: 25px;
+}
+
+/* Correct the selector for .subheading */
+.subheading {
+    font-size: 30px;
+}
+
+.essay {
     font-family: 'Merriweather'; /* Use the Merriweather font */
-  }
+    font-size: 15px; /* Decreased font size for the .essay section */
+}
 
-  .custom-banner {
+.custom-banner {
     background-color: #ffffff; /* Set the banner background color */
-    padding: 20px; /* Add padding to the banner */
-  }
-  
-  /* Custom styles for the logo */
-  .custom-logo {
-    max-width: 10%; /* Ensure the logo scales with its container */
-  }
-  
-  /* Styles for the images container */
-  .image-container {
-    margin-top: 24px;
-    max-width: 70%; /* Adjust the size as needed */
-    margin: 70 auto; /* Center the image container */
-  }
+    padding: 0; /* Remove padding from the banner */
+}
+
+/* Decrease the size of the banner and the image */
+.container-fluid.bg-light img {
+    max-width: 19%; /* Adjust the max-width as needed */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+
+
+.custom-banner {
+    padding: px; /* Decrease the padding to make the banner smaller */
+}
+
+/* Custom styles for the logo */
+.custom-logo {
+    max-width: 100%; /* Ensure the logo scales with its container */
+}
+
+/* Styles for the images container */
+.image-container {
+    margin-top: 10px;
+    margin-bottom: 10px; !important
+    max-width: 19%; /* Adjust the size as needed */ !important
+    margin-left: 0; /* Remove the margin on the left */
+    margin-right: 0; /* Remove the margin on the right */
+}
+
+.video-container {
+    width: 100%; /* Adjust the width to make the video larger */
+}
