@@ -38,7 +38,8 @@ h1, .subheading {
 }
 
 .citations-container {
-    padding-top: 0%;
+    width: 113%;
+    padding-top: 2%;
     margin-top: 12%;
 }
 
@@ -68,24 +69,48 @@ h1, .subheading {
     display: inline-block; /* Make the bubble fit the content */
 }
 
-/* Image Container Styles */
-.image-container {
-    margin-top: -65%;
-    font-size: small;
+/* Image Container Styles for the resized images */
+.image-container img {
+    margin-top: -36%;
+    max-width: 118%; /* Adjust the image max-width as needed for larger size */
+    height: auto; /* Maintain aspect ratio */
     background-color: #ccc; /* Grey bubble background */
-    padding: 5px; /* Add padding to create the bubble effect */
-    border-radius: 10px; /* Add rounded corners */
+    padding: 7px; /* Adjust padding to fit the larger size */
+    border-radius: 8px; /* Add rounded corners */
+    margin-left: -10%;
+}
+
+/* Image Caption Styles for the resized images */
+.image-caption {
+    background-color: #ccc; /* Grey bubble background for captions */
+    padding: 10px; /* Adjust padding to fit the larger size */
+    border-radius: 10px; /* Add rounded corners for captions */
+    font-size: small;
+    text-align: center;
+    margin-left: -5%;
 }
 
 /* Media Queries */
-@media (max-width: 1266px) {
+@media (max-width: 1366px) {
     .image-container {
-        margin-top: -135%;
+        margin-top: -5%;
     }
 }
 
 @media (max-width: 768px) {
     .image-container {
-        margin-top: 0%;
+        margin-top: 59%;
+    }
+
+    .essay-caption {
+        font-size: small;
+        width: 110%;
+        margin-bottom: 5%;
+        margin-top: -30%;
+        margin-left: -5%;
+        background-color: #ccc; /* Grey bubble background */
+        padding: 5px 10px; /* Add padding to create the bubble effect */
+        border-radius: 10px; /* Add rounded corners */
+        display: inline-block; /* Make the bubble fit the content */
     }
 }
