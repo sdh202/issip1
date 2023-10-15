@@ -1,0 +1,28 @@
+/* styles.css */
+
+/* Set body background color with !important to ensure it takes precedence */
+body {
+    background-color: tan !important;
+    font-family: sans-serif; 
+  }
+  
+  /* Styles for the header section */
+  h1, .subheading {
+    font-family: 'Diplomata SC', sans-serif;
+  }
+  
+  h1 {
+    font-size: 65px;
+  }
+  
+  /* Correct the selector for .subheading */
+  .subheading {
+    font-size: 35px;
+  }
+  
+  /* Styles for the images container */
+  .image-container {
+    margin-top: 20px;
+    max-width: 80%; /* Adjust the size as needed */
+    margin: 0 auto; /* Center the image container */
+  }
