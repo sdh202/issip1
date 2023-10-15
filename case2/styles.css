@@ -61,12 +61,19 @@ h1, .subheading {
 
 }
 
+/* Media query for small computers! */
+@media (max-width: 1266px) {
+    .image-container {
+        margin-top: -135%;
+    }  
+}
 /* Media query for mobile screens! */
 @media (max-width: 768px) {
     .image-container {
         margin-top: 0%;
     }    
 }
+  
 
 
 .video-container {
