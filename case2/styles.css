@@ -8,7 +8,7 @@ body {
 
 /* Styles for the header section */
 h1, .subheading {
-    font-family: 'Diplomata SC', sans-serif;
+    font-family: 'Orbitron', sans-serif;
 }
 
 /* Correct the selector for .subheading */
@@ -58,6 +58,14 @@ h1, .subheading {
 
 .image-container {
     margin-top: -65%;
+
+}
+
+/* Media query for mobile screens! */
+@media (max-width: 768px) {
+    .image-container {
+        margin-top: 0%;
+    }    
 }
 
 
