@@ -1,37 +1,35 @@
-/* styles.css */
-
-/* Set body background color with !important to ensure it takes precedence */
+/* Global Styles */
 body {
     background-color: rgb(192, 190, 187) !important;
-    font-family: 'Times New Roman', Times, serif; 
+    font-family: 'Times New Roman', Times, serif;
 }
 
-/* Styles for the header section */
+/* Header Styles */
 h1, .subheading {
     font-family: 'Orbitron', sans-serif;
 }
 
-/* Correct the selector for .subheading */
 .subheading {
     font-size: 30px;
 }
 
+/* Banner Styles */
 .custom-banner {
-    background-color: #ffffff; /* Set the banner background color */
-    padding: 0; /* Remove padding from the banner */
+    background-color: #ffffff;
+    padding: 0;
 }
 
-/* Decrease the size of the banner and the image */
 .container-fluid.bg-light img {
-    max-width: 19%; /* Adjust the max-width as needed */
-    height: auto; /* Maintain the aspect ratio */
+    max-width: 19%;
+    height: auto;
 }
 
-/* Custom styles for the logo */
+/* Logo Styles */
 .custom-logo {
-    max-width: 100%; /* Ensure the logo scales with its container */
+    max-width: 100%;
 }
 
+/* Essay Styles */
 .essay {
     font-size: 101%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -41,43 +39,53 @@ h1, .subheading {
 
 .citations-container {
     padding-top: 0%;
-    margin-top: 7%;
-    
+    margin-top: 12%;
 }
 
+/* Video Styles */
 .video-caption {
     font-size: small;
+    background-color: #ccc; /* Grey bubble background */
+    padding: 5px 10px; /* Add padding to create the bubble effect */
+    border-radius: 10px; /* Add rounded corners */
+    display: inline-block; /* Make the bubble fit the content */
 }
 
+.video-container {
+    padding-bottom: -10%;
+    padding-top: 0%;
+}
+
+/* Essay Caption Styles */
 .essay-caption {
     font-size: small;
     width: 110%;
     margin-bottom: 5%;
     margin-top: -30%;
+    background-color: #ccc; /* Grey bubble background */
+    padding: 5px 10px; /* Add padding to create the bubble effect */
+    border-radius: 10px; /* Add rounded corners */
+    display: inline-block; /* Make the bubble fit the content */
 }
 
+/* Image Container Styles */
 .image-container {
     margin-top: -65%;
-
+    font-size: small;
+    background-color: #ccc; /* Grey bubble background */
+    padding: 5px; /* Add padding to create the bubble effect */
+    border-radius: 10px; /* Add rounded corners */
 }
 
-/* Media query for small computers! */
+/* Media Queries */
 @media (max-width: 1266px) {
     .image-container {
         margin-top: -135%;
-    }  
+    }
 }
-/* Media query for mobile screens! */
+
 @media (max-width: 768px) {
     .image-container {
         margin-top: 0%;
-    }    
-}
-  
-
-
-.video-container {
-
-    padding-bottom: -10%;
-    padding-top: 0%;
+    }
 }
