@@ -99,14 +99,15 @@ h1, .subheading {
 
 @media (max-width: 768px) {
     .image-container {
+        margin-left: 12%;
         margin-top: 39%;
-        margin-left: auto;
     }
     .image-caption {
-        margin-left: auto;
+        margin-left: 11%;
+        
     }
     .citations-container {
-        margin-left: auto;
+        align-items: right;
     }
 
 
