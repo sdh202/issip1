@@ -1,15 +1,16 @@
 /* Global Styles */
 body {
-    background-color: rgb(192, 190, 187) !important;
+    background-color: rgb(237, 237, 237) !important;
     font-family: 'Times New Roman', Times, serif;
 }
 
 /* Header Styles */
 h1, .subheading {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Open Sans Medium 500', sans-serif;
 }
 
 .subheading {
+    font-family: 'Open Sans', Light;
     font-size: 30px;
 }
 
@@ -35,6 +36,7 @@ h1, .subheading {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 160%;
     margin-bottom: -12%;
+    width: 117%;
 }
 
 .citations-container {
@@ -60,11 +62,11 @@ h1, .subheading {
 /* Essay Caption Styles */
 .essay-caption {
     font-size: small;
-    width: 110%;
+    width: 115%;
     margin-bottom: 5%;
     margin-top: -30%;
     background-color: #ccc; /* Grey bubble background */
-    padding: 5px 10px; /* Add padding to create the bubble effect */
+    padding: px; /* Add padding to create the bubble effect */
     border-radius: 10px; /* Add rounded corners */
     display: inline-block; /* Make the bubble fit the content */
 }
@@ -82,7 +84,7 @@ h1, .subheading {
 
 /* Image Caption Styles for the resized images */
 .image-caption {
-    background-color: #ccc; /* Grey bubble background for captions */
+    background-color: #cac7c7; /* Grey bubble background for captions */
     padding: 10px; /* Adjust padding to fit the larger size */
     border-radius: 10px; /* Add rounded corners for captions */
     font-size: small;
@@ -102,9 +104,17 @@ h1, .subheading {
         margin-left: 12%;
         margin-top: 39%;
     }
+
+    .essay {
+        font-size: 101%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 160%;
+        margin-bottom: -12%;
+        width: 100%;
+    }
     .image-caption {
         margin-left: 11%;
-        
+
     }
     .citations-container {
         align-items: right;
