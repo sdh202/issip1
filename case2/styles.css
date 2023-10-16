@@ -91,7 +91,7 @@ h1, .subheading {
 }
 
 /* Media Queries */
-@media (max-width: 1166px) {
+@media (max-width: 1250px) {
     .image-container {
         margin-top: -75%;
     }
@@ -99,8 +99,16 @@ h1, .subheading {
 
 @media (max-width: 768px) {
     .image-container {
-        margin-top: 59%;
+        margin-top: 39%;
+        margin-left: auto;
     }
+    .image-caption {
+        margin-left: auto;
+    }
+    .citations-container {
+        margin-left: auto;
+    }
+
 
     .essay-caption {
         font-size: small;
