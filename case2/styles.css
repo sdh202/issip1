@@ -91,9 +91,9 @@ h1, .subheading {
 }
 
 /* Media Queries */
-@media (max-width: 1366px) {
+@media (max-width: 1166px) {
     .image-container {
-        margin-top: -5%;
+        margin-top: -75%;
     }
 }
 
