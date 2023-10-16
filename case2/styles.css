@@ -73,7 +73,7 @@ h1, .subheading {
 
 /* Image Container Styles for the resized images */
 .image-container img {
-    margin-top: -36%;
+    margin-top: -16%;
     max-width: 118%; /* Adjust the image max-width as needed for larger size */
     height: auto; /* Maintain aspect ratio */
     background-color: #ccc; /* Grey bubble background */
