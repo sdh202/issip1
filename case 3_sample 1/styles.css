@@ -4,12 +4,10 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-
 /* Header Styles */
 h1, .subheading {
     font-family: 'Open Sans Medium 500', sans-serif;
 }
-
 
 .subheading {
     font-family: 'Open Sans', Light;
