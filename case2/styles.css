@@ -10,6 +10,11 @@ h1, .subheading {
     font-family: 'Open Sans Medium 500', sans-serif;
 }
 
+/* Increase spacing between navigation items */
+.nav-list {
+    margin-left: 20px; /* Adjust the value as needed to increase the spacing */
+}
+
 
 .subheading {
     font-family: 'Open Sans', Light;
