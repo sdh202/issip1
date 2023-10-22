@@ -95,7 +95,10 @@ h1, .subheading {
 /* Media Queries */
 @media (max-width: 1250px) {
     .image-container {
-        margin-top: -75%;
+        margin-top: -55%;
+    }
+    .navbar {
+        margin-left: -10%;
     }
 }
 
@@ -103,6 +106,10 @@ h1, .subheading {
     .image-container {
         margin-left: 12%;
         margin-top: 39%;
+    }
+
+    .navbar {
+        margin-left: 86.5%;
     }
 
     .essay {
