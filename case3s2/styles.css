@@ -1,0 +1,146 @@
+/* Global Styles */
+body {
+    background-color: rgb(237, 237, 237) !important;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Header Styles */
+h1, .subheading {
+    font-family: 'Open Sans Medium 500', sans-serif;
+}
+
+.subheading {
+    font-family: 'Open Sans', Light;
+    font-size: 30px;
+}
+
+/* Banner Styles */
+.custom-banner {
+    background-color: #ffffff;
+    padding: 0;
+}
+
+.container-fluid.bg-light img {
+    max-width: 19%;
+    height: auto;
+}
+
+/* Logo Styles */
+.custom-logo {
+    max-width: 100%;
+}
+
+.col-md-12 text-center {
+    margin-top: 60%;
+}
+
+/* Essay Styles */
+.essay {
+    font-size: 101%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 160%;
+    margin-bottom: -12%;
+    width: 117%;
+}
+
+.citations-container {
+    width: 113%;
+    padding-top: 2%;
+    margin-top: 12%;
+}
+
+/* Video Styles */
+.video-caption {
+    font-size: small;
+    background-color: #ccc; /* Grey bubble background */
+    padding: 5px 10px; /* Add padding to create the bubble effect */
+    border-radius: 10px; /* Add rounded corners */
+    display: inline-block; /* Make the bubble fit the content */
+}
+
+.video-container {
+    padding-bottom: -10%;
+    padding-top: 0%;
+}
+
+/* Essay Caption Styles */
+.essay-caption {
+    font-size: small;
+    width: 115%;
+    margin-bottom: 5%;
+    margin-top: -30%;
+    background-color: #ccc; /* Grey bubble background */
+    padding: px; /* Add padding to create the bubble effect */
+    border-radius: 10px; /* Add rounded corners */
+    display: inline-block; /* Make the bubble fit the content */
+}
+
+/* Image Container Styles for the resized images */
+.image-container img {
+    margin-top: -16%;
+    max-width: 118%; /* Adjust the image max-width as needed for larger size */
+    height: auto; /* Maintain aspect ratio */
+    background-color: #ccc; /* Grey bubble background */
+    padding: 7px; /* Adjust padding to fit the larger size */
+    border-radius: 8px; /* Add rounded corners */
+    margin-left: -10%;
+}
+
+/* Image Caption Styles for the resized images */
+.image-caption {
+    background-color: #cac7c7; /* Grey bubble background for captions */
+    padding: 10px; /* Adjust padding to fit the larger size */
+    border-radius: 10px; /* Add rounded corners for captions */
+    font-size: small;
+    text-align: center;
+    margin-left: -5%;
+}
+
+/* Media Queries */
+@media (max-width: 1250px) {
+    .image-container {
+        margin-top: -55%;
+    }
+    .navbar {
+        margin-left: -10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        margin-left: 12%;
+        margin-top: 39%;
+    }
+
+    .navbar {
+        margin-left: 88.5%;
+    }
+
+    .essay {
+        font-size: 101%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 160%;
+        margin-bottom: -12%;
+        width: 100%;
+    }
+    .image-caption {
+        margin-left: 11%;
+
+    }
+    .citations-container {
+        align-items: right;
+    }
+
+
+    .essay-caption {
+        font-size: small;
+        width: 110%;
+        margin-bottom: 5%;
+        margin-top: -30%;
+        margin-left: -5%;
+        background-color: #ccc; /* Grey bubble background */
+        padding: 5px 10px; /* Add padding to create the bubble effect */
+        border-radius: 10px; /* Add rounded corners */
+        display: inline-block; /* Make the bubble fit the content */
+    }
+}
