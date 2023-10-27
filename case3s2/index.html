@@ -6,7 +6,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Cryptocurrency</title>
 
- <!-- Link styles.css: https://sdh202.github.io/issip1/case3s1/styles.css-->
+ <!-- Link styles.css: https://sdh202.github.io/issip1/case3s2/styles.css-->
  <link rel="stylesheet" href="styles.css">
 
 <!-- Add Bootstrap CSS and JS links -->
@@ -33,16 +33,15 @@
             <!-- Navigation Bar -->
             <nav class="navbar">
               <ul class="nav-list list-unstyled d-flex" style="margin-left: -1890%; margin-top: 42%;">
-                <li class="nav-item mr-3" style="margin-left: -30%; margin-top: 7%;"><a href="https://issip.org/">ISSIP Home</a></li>
+                <li class="nav-item mr-3" style="margin-left: -30%; margin-top: 7%;"><a href="https/issip.org/">ISSIP Home</a></li>
                 <li class="nav-item dropdown" style="margin-left: 15%">
-                  <a href="#" class="nav-link dropdown-toggle" style="margin-top: 6.5%" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a href="#" class="nav-link dropdown-toggle" style="margin-top: 6.5%" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" ariaexpanded="false">
                       Volunteer Sites
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="https://issip.org/case2/" target="_blank">Nuclear Energy</a>
                       <a class="dropdown-item" href="https://issip.org/case1/" target="_blank">US Postal System</a>
                       <a class="dropdown-item" href="https://issipcase3.my.canva.site/" target="_blank">Streaming Services</a>
-
                   </div>
               </li>
                   </div>
@@ -74,7 +73,7 @@
       <!-- Video container -->
       <div class="col-md-6"> <!-- Takes up half the width on medium screens -->
         <!-- Your video code here -->
-        <div class="video-container">
+        <div class="video-container" id="videoContainer">
          <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CKdy4Ds04ZA?si=zDcw4nPModI_1qtR" frameborder="0" allowfullscreen></iframe>
          </div>
@@ -94,14 +93,14 @@
         <div class="col-md-3" style="margin-top: 100px;">
             <!-- Your first image code here -->
             <div class="image-container text-center">
-                <img class="img-fluid" src="https://issip.org/wp-content/uploads/2023/10/Firefly-Group-of-friends-interacting-with-each-other-and-with-the-environment-in-a-massive-virtual-w.jpg" alt="Image 1">
+                <img class="img-fluid" id="image1" src="https://issip.org/wp-content/uploads/2023/10/Firefly-Group-of-friends-interacting-with-each-other-and-with-the-environment-in-a-massive-virtual-w.jpg" alt="Image 1">
                 <p class="image-caption text-center mt-2">Image 1: <br>Group of friends interacting in a virtual world of the future</p>
             </div>
         </div>
         <div class="col-md-3" style="margin-top: 100px;">
             <!-- Your second image code here -->
-            <div class="image-container text-center">
-                <img class="img-fluid" src="https://issip.org/wp-content/uploads/2023/10/vr-being-a-very-harmful-and-dystopian-technology-t.jpg" alt="Image 2">
+            <div class "image-container text-center">
+                <img class="img-fluid" id="image2" src="https://issip.org/wp-content/uploads/2023/10/vr-being-a-very-harmful-and-dystopian-technology-t.jpg" alt="Image 2">
                 <p class="image-caption text-center mt-2">Image 2: <br>VR causing social isolation and disconnection from reality</p>
             </div>
         </div>
@@ -113,7 +112,7 @@
                     <li>
                         <strong>Video:</strong> 
                         <em>Tool -</em> Flickify<br>
-                        <em>Prompt:</em> " I'm a VR Enthusiast trying to convey the pros and cons of VR, what it is, and how it is changing the world as a service innovation. Create a script for a short video on the topic."<br>
+                        <em>Prompt:</em> "I'm a VR Enthusiast trying to convey the pros and cons of VR, what it is, and how it is changing the world as a service innovation. Create a script for a short video on the topic."<br>
                         <em>Date Generated:</em> 10/21/2023
                     </li>
                     <li>
@@ -141,42 +140,42 @@
   </div>
 </body>
 <script>
-  // Get references to the button and media container
+  // Get references to the button and image elements
   const regenerateButton = document.getElementById("regenerateMediaButton");
-  const mediaContainer = document.getElementById("mediaContainer");
+  const videoContainer = document.getElementById("videoContainer");
+  const image1 = document.getElementById("image1");
+  const image2 = document.getElementById("image2");
 
-  // Define a function to replace the media
-  function regenerateMedia() {
-    // Replace the media container's content with the new media
-    mediaContainer.innerHTML = `
-      <!-- New Video -->
+  // Define arrays of video URLs and image URLs
+  const videoURLs = [
+    "https://www.youtube.com/embed/CKdy4Ds04ZA?si=zDcw4nPModI_1qtR",
+    "https://www.youtube.com/embed/eICHtCeHEaE?si=26tl7AIv9toYSkVd"
+  ];
+
+  const imageURLs = [
+    "https://issip.org/wp-content/uploads/2023/10/Firefly-Group-of-friends-interacting-with-each-other-and-with-the-environment-in-a-massive-virtual-w.jpg",
+    "https://issip.org/wp-content/uploads/2023/10/b5380bee-bfc1-4037-8396-04b60a06b30a-2.jpeg"
+  ];
+
+  let currentIndex = 0;
+
+  // Add a click event listener to the button
+  regenerateButton.addEventListener("click", function() {
+    // Replace the video source with the next URL in the array
+    videoContainer.innerHTML = `
       <div class="video-container">
         <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eICHtCeHEaE?si=26tl7AIv9toYSkVd" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-      
-      <!-- New Images -->
-      <div class="row">
-        <div class="col-md-3" style="margin-top: 100px;">
-          <!-- Your first new image code here -->
-          <div class="image-container text-center">
-            <img class="img-fluid" src="https://issip.org/wp-content/uploads/2023/10/b5380bee-bfc1-4037-8396-04b60a06b30a-2.jpeg" alt="Image 1">
-            <p class="image-caption text-center mt-2">Image 1: New Image Description 1</p>
-          </div>
-        </div>
-        <div class="col-md-3" style="margin-top: 100px;">
-          <!-- Your second new image code here -->
-          <div class="image-container text-center">
-            <img class="img-fluid" src="https://issip.org/wp-content/uploads/2023/10/Screenshot-2023-10-15-at-8.10.22-PM.png" alt="Image 2">
-            <p class="image-caption text-center mt-2">Image 2: New Image Description 2</p>
-          </div>
+          <iframe class="embed-responsive-item" src="${videoURLs[currentIndex]}" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     `;
-  }
 
-  // Add a click event listener to the button
-  regenerateButton.addEventListener("click", regenerateMedia);
+    // Replace the src attributes of image1 and image2 with the new URLs
+    image1.src = imageURLs[currentIndex];
+    currentIndex = (currentIndex + 1) % videoURLs.length; // Cycle through URLs for both images
+    image2.src = imageURLs[currentIndex];
+  });
 </script>
+
+
 </html>
