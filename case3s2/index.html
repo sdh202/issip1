@@ -142,6 +142,7 @@
 <script>
   const regenerateButton = document.getElementById("regenerateMediaButton");
   const images = document.querySelectorAll(".image");
+  const videoContainer = document.getElementById("videoContainer");
   
   const imageURLs = [
     [
@@ -154,12 +155,24 @@
     ]
   ];
 
-  let currentIndex = 0;
+  const videoURLs = [
+    "https://www.youtube.com/embed/CKdy4Ds04ZA?si=zDcw4nPModI_1qtR",
+    "https://www.youtube.com/embed/F22HrqRXLq8"
+  ];
+
+  let currentImageIndex = 0;
+  let currentVideoIndex = 0;
 
   regenerateButton.addEventListener("click", function() {
-    currentIndex = (currentIndex + 1) % 2;
-    images[0].src = imageURLs[currentIndex][0];
-    images[1].src = imageURLs[currentIndex][1];
+    currentImageIndex = (currentImageIndex + 1) % imageURLs.length;
+    currentVideoIndex = (currentVideoIndex + 1) % videoURLs.length;
+    images[0].src = imageURLs[currentImageIndex][0];
+    images[1].src = imageURLs[currentImageIndex][1];
+    videoContainer.innerHTML = `
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="${videoURLs[currentVideoIndex]}" frameborder="0" allowfullscreen></iframe>
+      </div>
+    `;
   });
 </script>
 </html>
