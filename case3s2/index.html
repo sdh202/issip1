@@ -14,7 +14,6 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Updated jQuery link -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-
  <!-- Google Fonts -->
  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron&display=swap">
  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather&display=swap">
@@ -87,20 +86,21 @@
           <p>VR as a service is a new, innovative, and affordable way to experience VR. It leverages the internet to deliver VR experiences to a wider range of people and has the potential to revolutionize many industries and aspects of our lives. However, it is important to be aware of the potential cons to society and the VR industry. On the societal level, VR as a service could lead to increased social isolation and addiction. It is also important to consider the ethical implications of VR, such as the potential for VR to be used for manipulation or surveillance. For the VR industry, VR as a service could lead to a decrease in hardware sales and a consolidation of power in the hands of a few large service providers. It is also important to consider the impact of VR as a service on VR content creators. Overall, VR as a service is a promising new technology, but it is important to be aware of the potential risks and challenges before it is widely adopted.</p>
       </div>
     </div>
-  <!-- Images section -->
+  </div>
+ <!-- Images section -->
   <div class="container">
     <div class="row">
         <div class="col-md-3" style="margin-top: 100px;">
             <!-- Your first image code here -->
             <div class="image-container text-center">
-                <img class="img-fluid" id="image1" src="https://issip.org/wp-content/uploads/2023/10/Firefly-Group-of-friends-interacting-with-each-other-and-with-the-environment-in-a-massive-virtual-w.jpg" alt="Image 1">
+                <img class="img-fluid image" src="https://issip.org/wp-content/uploads/2023/10/Firefly-Group-of-friends-interacting-with-each-other-and-with-the-environment-in-a-massive-virtual-w.jpg" alt="Image 1">
                 <p class="image-caption text-center mt-2">Image 1: <br>Group of friends interacting in a virtual world of the future</p>
             </div>
         </div>
         <div class="col-md-3" style="margin-top: 100px;">
             <!-- Your second image code here -->
-            <div class "image-container text-center">
-                <img class="img-fluid" id="image2" src="https://issip.org/wp-content/uploads/2023/10/vr-being-a-very-harmful-and-dystopian-technology-t.jpg" alt="Image 2">
+            <div class="image-container text-center">
+                <img class="img-fluid image" src="https://issip.org/wp-content/uploads/2023/10/vr-being-a-very-harmful-and-dystopian-technology-t.jpg" alt="Image 2">
                 <p class="image-caption text-center mt-2">Image 2: <br>VR causing social isolation and disconnection from reality</p>
             </div>
         </div>
@@ -140,42 +140,26 @@
   </div>
 </body>
 <script>
-  // Get references to the button and image elements
   const regenerateButton = document.getElementById("regenerateMediaButton");
-  const videoContainer = document.getElementById("videoContainer");
-  const image1 = document.getElementById("image1");
-  const image2 = document.getElementById("image2");
-
-  // Define arrays of video URLs and image URLs
-  const videoURLs = [
-    "https://www.youtube.com/embed/CKdy4Ds04ZA?si=zDcw4nPModI_1qtR",
-    "https://www.youtube.com/embed/eICHtCeHEaE?si=26tl7AIv9toYSkVd"
-  ];
-
+  const images = document.querySelectorAll(".image");
+  
   const imageURLs = [
-    "https://issip.org/wp-content/uploads/2023/10/Firefly-Group-of-friends-interacting-with-each-other-and-with-the-environment-in-a-massive-virtual-w.jpg",
-    "https://issip.org/wp-content/uploads/2023/10/b5380bee-bfc1-4037-8396-04b60a06b30a-2.jpeg"
+    [
+      "https://issip.org/wp-content/uploads/2023/10/Screenshot-2023-10-08-at-8.48.11-PM.png",
+      "https://issip.org/wp-content/uploads/2023/10/Screenshot-2023-10-08-at-7.56.37-PM-e1696823201751.png"
+    ],
+    [
+      "https://issip.org/wp-content/uploads/2023/10/Firefly-Group-of-friends-interacting-with-each-other-and-with-the-environment-in-a-massive-virtual-w.jpg",
+      "https://issip.org/wp-content/uploads/2023/10/vr-being-a-very-harmful-and-dystopian-technology-t.jpg"
+    ]
   ];
 
   let currentIndex = 0;
 
-  // Add a click event listener to the button
   regenerateButton.addEventListener("click", function() {
-    // Replace the video source with the next URL in the array
-    videoContainer.innerHTML = `
-      <div class="video-container">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="${videoURLs[currentIndex]}" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-    `;
-
-    // Replace the src attributes of image1 and image2 with the new URLs
-    image1.src = imageURLs[currentIndex];
-    currentIndex = (currentIndex + 1) % videoURLs.length; // Cycle through URLs for both images
-    image2.src = imageURLs[currentIndex];
+    currentIndex = (currentIndex + 1) % 2;
+    images[0].src = imageURLs[currentIndex][0];
+    images[1].src = imageURLs[currentIndex][1];
   });
 </script>
-
-
 </html>
