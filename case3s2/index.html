@@ -74,7 +74,7 @@
         <!-- Your video code here -->
         <div class="video-container" id="videoContainer">
          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CKdy4Ds04ZA?si=zDcw4nPModI_1qtR" frameborder="0" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4IkpSpJNyZg?si=M65x41dYcByT4jD8" frameborder="0" allowfullscreen></iframe>
          </div>
         </div>
       </div>
@@ -114,172 +114,131 @@
             <div class="citations-container border rounded text-left bg-dark text-white" style="height: auto; font-size: 12px;">
                 <h3 class="text-blue" style="font-size: large; text-align: center;">Citations</h3>
                 <ul style="list-style-type: none; padding-left: 1%;">
-                    <li>
-                        <strong>Video:</strong> 
-                        <em>Tool -</em> Flickify<br>
-                        <em>Prompt:</em> "I'm a VR Enthusiast trying to convey the pros and cons of VR, what it is, and how it is changing the world as a service innovation. Create a script for a short video on the topic."<br>
-                        <em>Date Generated:</em> 10/21/2023
-                    </li>
-                    <li>
-                        <br><strong>Essay:</strong>
-                        <em>Tool -</em> Google Bard<br>
-                        <em>Prompt:</em> "Craft a fairly short, highly concise, and clear essay without numbering or bullet points about how the internet has enabled Virtual Reality as a service innovation. Discuss pros and cons and provide a great overview of what possibilities it can bring"<br>
-                        <em>Date Generated:</em> 10/19/2023
-                    </li>
-                    <li>
-                        <br><strong>Image 1:</strong>
-                        <em>Tool -</em> Adobe Firefly<br>
-                        <em>Prompt:</em> "Group of friends interacting with each other and with the environment in a massive virtual world, metaverse, futuristic technologies, dark mood"<br>
-                        <em>Date Generated:</em> 10/20/2023
-                    </li>
-                    <li>
-                        <br><strong>Image 2:</strong> 
-                        <em>Tool -</em> Wepik AI Image Generator<br>
-                        <em>Prompt:</em> "VR being a very harmful and dystopian technology that causes social isolation and makes society worse, scary"<br>
-                        <em>Date Generated:</em> 10/21/2023
-                    </li>
-                </ul>
-            </div>
-          </div>
-      </div>
-  </div>
-</body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
- <!-- Document metadata -->
- <!-- Add your metadata here -->
-</head>
-<body>
-<!-- Your HTML content -->
-<!-- Your existing HTML content -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
- <!-- Document metadata -->
- <!-- Add your metadata here -->
-</head>
-<body>
-<!-- Your HTML content -->
-<!-- Your existing HTML content -->
-
-<script>
-  const regenerateButton = document.getElementById("regenerateMediaButton");
-  const images = document.querySelectorAll(".image");
-  const videoContainer = document.getElementById("videoContainer");
-  const citations = document.querySelector(".citations-container ul");
-  
-  const imageURLs = [
-    [
-      "https://issip.org/wp-content/uploads/2023/10/Firefly-Cryptocurrency-changing-the-world-and-removing-need-for-banks-technological-network-in-busi.jpg",
-      "https://issip.org/wp-content/uploads/2023/10/Firefly-Cryptocurrency-destroying-the-dollar-forcing-wealth-into-a-cloud-43125.jpg"
-    ],
-    [
-      "https://issip.org/wp-content/uploads/2023/10/cded2955-3fd4-4fb4-b9eb-46a595bc68f5.jpeg",
-      "https://issip.org/wp-content/uploads/2023/10/vr-being-a-very-harmful-and-dystopian-technology-t.jpg"
-    ]
-  ];
-
-  const videoURLs = [
-    "https://www.youtube.com/embed/4IkpSpJNyZg?si=M65x41dYcByT4jD8",
-    "https://www.youtube.com/embed/F22HrqRXLq8"
-  ];
-
-  const imageCitations = [
-    [
-      "Tool - Adobe Firefly",
-      "Prompt: 'Description 1'",
-      "Date Generated: 10/29/2023"
-    ],
-    [
-      "Tool - Adobe Firefly",
-      "Prompt: 'Description 2'",
-      "Date Generated: 10/29/2023"
-    ]
-  ];
-
-  const videoCitations = [
-    [
-      "Tool - Flickify",
-      "Prompt: 'VR Pros and Cons'",
-      "Date Generated: 10/21/2023"
-    ],
-    [
-      "Tool - Another Generator",
-      "Prompt: 'Different Video'",
-      "Date Generated: 10/25/2023"
-    ]
-  ];
-
-  const essayCitation = [
-    "Tool - Google Bard",
-    "Prompt: 'Craft a fairly short, highly concise, and clear essay without numbering or bullet points about how the internet has enabled Virtual Reality as a service innovation. Discuss pros and cons and provide a great overview of what possibilities it can bring'",
-    "Date Generated: 10/19/2023"
-  ];
-
-  let currentImageIndex = 0;
-  let currentVideoIndex = 0;
-
-  // Function to update the citations
-  function updateCitations() {
-    citations.innerHTML = '';
-    const currentImagesCitation = imageCitations[currentImageIndex];
-    const currentVideoCitation = videoCitations[currentVideoIndex];
-
-    const image1Citation = document.createElement('li');
-    image1Citation.innerHTML = `
-      <strong>Image 1:</strong><br>
-      <em>${currentImagesCitation[0]}</em><br>
-      <em>${currentImagesCitation[1]}</em><br>
-      <em>${currentImagesCitation[2]}</em>
-    `;
-    citations.appendChild(image1Citation);
-
-    const image2Citation = document.createElement('li');
-    image2Citation.innerHTML = `
-      <strong>Image 2:</strong><br>
-      <em>${currentImagesCitation[0]}</em><br>
-      <em>${currentImagesCitation[1]}</em><br>
-      <em>${currentImagesCitation[2]}</em>
-    `;
-    citations.appendChild(image2Citation);
-
-    const videoCitation = document.createElement('li');
-    videoCitation.innerHTML = `
-      <strong>Video:</strong><br>
-      <em>${currentVideoCitation[0]}</em><br>
-      <em>${currentVideoCitation[1]}</em><br>
-      <em>${currentVideoCitation[2]}</em>
-    `;
-    citations.appendChild(videoCitation);
-
-    const essayCitationLi = document.createElement('li');
-    essayCitationLi.innerHTML = `
-      <strong>Essay:</strong><br>
-      <em>${essayCitation[0]}</em><br>
-      <em>${essayCitation[1]}</em><br>
-      <em>${essayCitation[2]}</em>
-    `;
-    citations.appendChild(essayCitationLi);
-  }
-
-  regenerateButton.addEventListener("click", function() {
-    currentImageIndex = (currentImageIndex + 1) % imageURLs.length;
-    currentVideoIndex = (currentVideoIndex + 1) % videoURLs.length;
-    images[0].src = imageURLs[currentImageIndex][0];
-    images[1].src = imageURLs[currentImageIndex][1];
-    videoContainer.innerHTML = `
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="${videoURLs[currentVideoIndex]}" frameborder="0" allowfullscreen></iframe>
-      </div>
-    `;
-    updateCitations();
-  });
-
-  // Initial citations
-  updateCitations();
-</script>
+                  <script>
+                    const regenerateButton = document.getElementById("regenerateMediaButton");
+                    const images = document.querySelectorAll(".image");
+                    const videoContainer = document.getElementById("videoContainer");
+                    const citations = document.querySelector(".citations-container ul");
+                  
+                    const imageURLs = [
+                      [
+                        "https://issip.org/wp-content/uploads/2023/10/Firefly-Cryptocurrency-changing-the-world-and-removing-need-for-banks-technological-network-in-busi.jpg",
+                        "https://issip.org/wp-content/uploads/2023/10/Firefly-Cryptocurrency-destroying-the-dollar-forcing-wealth-into-a-cloud-43125.jpg"
+                      ],
+                      [
+                        "https://issip.org/wp-content/uploads/2023/10/cded2955-3fd4-4fb4-b9eb-46a595bc68f5.jpeg",
+                        "https://issip.org/wp-content/uploads/2023/10/Screenshot-2023-10-31-at-9.36.25-PM.png"
+                      ]
+                    ];
+                  
+                    const videoURLs = [
+                      "https://www.youtube.com/embed/4IkpSpJNyZg?si=M65x41dYcByT4jD8",
+                      "https://www.youtube.com/embed/vAT5i94qNKk?si=Jtxuxt-mQoJqRp6U"
+                    ];
+                  
+                    const imageCitations = [
+                      [
+                        "Tool: Adobe Firefly",
+                        "Prompt: Cryptocurrency changing the world and removing need for banks, technological network in businessman hand with bitcoin on virtual screen; block chain crypto currency",
+                        "Date Generated: 10/29/2023"
+                      ],
+                      [
+                        "Tool: Adobe Firefly",
+                        "Prompt: Cryptocurrency destroying the dollar, forcing wealth into a cloud",
+                        "Date Generated: 10/29/2023"
+                      ]
+                    ];
+                  
+                    const videoCitations = [
+                      [
+                        "Tool: Flickify",
+                        "Prompt: Bitcoin as a Service Innovation changing society",
+                        "Date Generated: 10/21/2023"
+                      ],
+                      [
+                        "Tool: Flickify",
+                        "Prompt: 'Bitcoin bringing innovation in the world and the risk of the technology'",
+                        "Date Generated: 10/30/2023"
+                      ]
+                    ];
+                  
+                    const essayCitation = [
+                      "Tool: ChatGPT",
+                      "Prompt: Generate a short essay about bitcoin as a service innovation. Include pros and cons",
+                      "Date Generated: 10/29/2023"
+                    ];
+                  
+                    let currentImageIndex = 0;
+                    let currentVideoIndex = 0;
+                  
+                    // Function to update the citations
+                    function updateCitations() {
+                      citations.innerHTML = '';
+                      const currentImagesCitation = imageCitations[currentImageIndex];
+                      const currentVideoCitation = videoCitations[currentVideoIndex];
+                  
+                      const image1Citation = document.createElement('li');
+                      image1Citation.innerHTML = `
+                        <strong>Image 1:</strong><br>
+                        <em>${currentImagesCitation[0]}</em><br>
+                        <em>${currentImagesCitation[1]}</em><br>
+                        <em>${currentImagesCitation[2]}</em>
+                      `;
+                      citations.appendChild(image1Citation);
+                  
+                      const image2Citation = document.createElement('li');
+                      const nextImageIndex = (currentImageIndex + 1) % imageURLs.length; // Get the citation for the next image
+                      const nextImagesCitation = imageCitations[nextImageIndex];
+                      image2Citation.innerHTML = `
+                        <strong>Image 2:</strong><br>
+                        <em>${nextImagesCitation[0]}</em><br>
+                        <em>${nextImagesCitation[1]}</em><br>
+                        <em>${nextImagesCitation[2]}</em>
+                      `;
+                      citations.appendChild(image2Citation);
+                  
+                      const videoCitation = document.createElement('li');
+                      videoCitation.innerHTML = `
+                        <strong>Video:</strong><br>
+                        <em>${currentVideoCitation[0]}</em><br>
+                        <em>${currentVideoCitation[1]}</em><br>
+                        <em>${currentVideoCitation[2]}</em>
+                      `;
+                      citations.appendChild(videoCitation);
+                  
+                      const essayCitationLi = document.createElement('li');
+                      essayCitationLi.innerHTML = `
+                        <strong>Essay:</strong><br>
+                        <em>${essayCitation[0]}</em><br>
+                        <em>${essayCitation[1]}</em><br>
+                        <em>${essayCitation[2]}</em>
+                      `;
+                      citations.appendChild(essayCitationLi);
+                    }
+                  
+                    regenerateButton.addEventListener("click", function () {
+                      currentImageIndex = (currentImageIndex + 1) % imageURLs.length;
+                      currentVideoIndex = (currentVideoIndex + 1) % videoURLs.length;
+                      images[0].src = imageURLs[currentImageIndex][0];
+                      images[1].src = imageURLs[currentImageIndex][1];
+                  
+                      // Update the citation for the first image when the button is clicked
+                      imageCitations[currentImageIndex][0] = "Tool: Bing Image Creator";
+                      imageCitations[currentImageIndex][1] = "Prompt: Cryptocurrency causing cybersecurity breach of wealth";
+                      imageCitations[currentImageIndex][2] = "Date: 10/30/2023";
+                  
+                      videoContainer.innerHTML = `
+                        <div class="embed-responsive embed-responsive-16by9">
+                          <iframe class="embed-responsive-item" src="${videoURLs[currentVideoIndex]}" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                      `;
+                      updateCitations(); // Call the function to update the citations
+                    });
+                  
+                    // Initial citations
+                    updateCitations();
+                  </script>
+                  
+                  
 </html>
-
-
